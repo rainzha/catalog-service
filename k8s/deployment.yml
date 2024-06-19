@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: catalog-service
-          image: catalog-service:latest
-          imagePullPolicy: Never
+          image: ghcr.io/rainzha/catalog-service:latest
+          imagePullPolicy: IfNotPresent
           lifecycle:
             preStop:
               exec:
